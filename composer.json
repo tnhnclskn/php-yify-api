@@ -8,7 +8,7 @@
     "autoload": {
         "psr-4": {"YifyAPI\\": "src/"}
     },
-    "license": "GNU",
+    "license": "GPL-3.0-or-later",
     "authors": [
         {
             "name": "Tunahan Çalışkan",
