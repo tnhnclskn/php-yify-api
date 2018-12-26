@@ -1,0 +1,19 @@
+{
+    "name": "tnhnclskn/yify-api",
+    "description": "Yify API on PHP",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3@dev"
+    },
+    "autoload": {
+        "psr-4": {"YifyAPI\\": "src/"}
+    },
+    "license": "GNU",
+    "authors": [
+        {
+            "name": "Tunahan Çalışkan",
+            "email": "mail@tunahancaliskan.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
