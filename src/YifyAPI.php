@@ -110,8 +110,8 @@ class YifyAPI {
             'password' => $password,
             'application_key' => $this->app_key,
         ];
-        $response = $this->client->request('GET', 'user_get_key.json', [
-            'query' => array_merge($options, $parameters),
+        $response = $this->client->request('POST', 'user_get_key.json', [
+            'form_params' => array_merge($options, $parameters),
         ]);
         return $this->returnResponse($response);
     }
@@ -132,8 +132,8 @@ class YifyAPI {
             'user_key' => $user_key,
             'application_key' => $this->app_key,
         ];
-        $response = $this->client->request('GET', 'user_edit_settings.json', [
-            'query' => array_merge($options, $parameters),
+        $response = $this->client->request('POST', 'user_edit_settings.json', [
+            'form_params' => array_merge($options, $parameters),
         ]);
         return $this->returnResponse($response);
     }
@@ -143,8 +143,8 @@ class YifyAPI {
             'user_key' => $user_key,
             'application_key' => $this->app_key,
         ];
-        $response = $this->client->request('GET', 'user_register.json', [
-            'query' => array_merge($options, $parameters),
+        $response = $this->client->request('POST', 'user_register.json', [
+            'form_params' => array_merge($options, $parameters),
         ]);
         return $this->returnResponse($response);
     }
@@ -154,8 +154,8 @@ class YifyAPI {
             'email' => $email,
             'application_key' => $this->app_key,
         ];
-        $response = $this->client->request('GET', 'user_forgot_password.json', [
-            'query' => array_merge($options, $parameters),
+        $response = $this->client->request('POST', 'user_forgot_password.json', [
+            'form_params' => array_merge($options, $parameters),
         ]);
         return $this->returnResponse($response);
     }
@@ -166,8 +166,8 @@ class YifyAPI {
             'new_password' => $new_password,
             'application_key' => $this->app_key,
         ];
-        $response = $this->client->request('GET', 'user_reset_password.json', [
-            'query' => array_merge($options, $parameters),
+        $response = $this->client->request('POST', 'user_reset_password.json', [
+            'form_params' => array_merge($options, $parameters),
         ]);
         return $this->returnResponse($response);
     }
@@ -178,8 +178,8 @@ class YifyAPI {
             'movie_id' => $movie_id,
             'application_key' => $this->app_key,
         ];
-        $response = $this->client->request('GET', 'like_movie.json', [
-            'query' => array_merge($options, $parameters),
+        $response = $this->client->request('POST', 'like_movie.json', [
+            'form_params' => array_merge($options, $parameters),
         ]);
         return $this->returnResponse($response);
     }
@@ -201,8 +201,8 @@ class YifyAPI {
             'movie_id' => $movie_id,
             'application_key' => $this->app_key,
         ];
-        $response = $this->client->request('GET', 'add_movie_bookmark.json', [
-            'query' => array_merge($options, $parameters),
+        $response = $this->client->request('POST', 'add_movie_bookmark.json', [
+            'form_params' => array_merge($options, $parameters),
         ]);
         return $this->returnResponse($response);
     }
@@ -213,8 +213,8 @@ class YifyAPI {
             'movie_id' => $movie_id,
             'application_key' => $this->app_key,
         ];
-        $response = $this->client->request('GET', 'delete_movie_bookmark.json', [
-            'query' => array_merge($options, $parameters),
+        $response = $this->client->request('POST', 'delete_movie_bookmark.json', [
+            'form_params' => array_merge($options, $parameters),
         ]);
         return $this->returnResponse($response);
     }
@@ -226,8 +226,8 @@ class YifyAPI {
             'comment_text' => $comment_text,
             'application_key' => $this->app_key,
         ];
-        $response = $this->client->request('GET', 'make_comment.json', [
-            'query' => array_merge($options, $parameters),
+        $response = $this->client->request('POST', 'make_comment.json', [
+            'form_params' => array_merge($options, $parameters),
         ]);
         return $this->returnResponse($response);
     }
@@ -238,8 +238,8 @@ class YifyAPI {
             'comment_id' => $comment_id,
             'application_key' => $this->app_key,
         ];
-        $response = $this->client->request('GET', 'like_comment.json', [
-            'query' => array_merge($options, $parameters),
+        $response = $this->client->request('POST', 'like_comment.json', [
+            'form_params' => array_merge($options, $parameters),
         ]);
         return $this->returnResponse($response);
     }
@@ -250,8 +250,8 @@ class YifyAPI {
             'comment_id' => $comment_id,
             'application_key' => $this->app_key,
         ];
-        $response = $this->client->request('GET', 'report_comment.json', [
-            'query' => array_merge($options, $parameters),
+        $response = $this->client->request('POST', 'report_comment.json', [
+            'form_params' => array_merge($options, $parameters),
         ]);
         return $this->returnResponse($response);
     }
@@ -262,8 +262,8 @@ class YifyAPI {
             'comment_id' => $comment_id,
             'application_key' => $this->app_key,
         ];
-        $response = $this->client->request('GET', 'delete_comment.json', [
-            'query' => array_merge($options, $parameters),
+        $response = $this->client->request('POST', 'delete_comment.json', [
+            'form_params' => array_merge($options, $parameters),
         ]);
         return $this->returnResponse($response);
     }
@@ -274,8 +274,8 @@ class YifyAPI {
             'movie_title' => $movie_title,
             'application_key' => $this->app_key,
         ];
-        $response = $this->client->request('GET', 'make_request.json', [
-            'query' => array_merge($options, $parameters),
+        $response = $this->client->request('POST', 'make_request.json', [
+            'form_params' => array_merge($options, $parameters),
         ]);
         return $this->returnResponse($response);
     }
