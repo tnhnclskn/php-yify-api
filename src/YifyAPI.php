@@ -24,7 +24,7 @@ class YifyAPI {
         if ($response->getStatusCode() != 200) {
             $this->throwException($response->getStatusCode(), $response->getReasonPhrase());
         } else {
-            return json_decode($response->getBody());
+            return json_decode($response->getBody())->data;
         }
     }
 
