@@ -36,7 +36,8 @@ Why `php-http/guzzle6-adapter`? We are decoupled from any HTTP messaging client 
 require_once __DIR__ . '/vendor/autoload.php';
 
 $client = new \YifyAPI\YifyAPI();
-$movies = $client->listMovies();
+$response = $client->listMovies();
+$movies = $response->movies;
 ```
 
 From `$client` object, you can access to all YifyAPI.
