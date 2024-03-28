@@ -3,10 +3,12 @@
     "description": "Yify API on PHP",
     "type": "library",
     "require": {
-        "guzzlehttp/guzzle": "^6.3@dev"
+        "guzzlehttp/guzzle": "^7.8"
     },
     "autoload": {
-        "psr-4": {"YifyAPI\\": "src/"}
+        "psr-4": {
+            "YifyAPI\\": "src/"
+        }
     },
     "license": "GPL-3.0-or-later",
     "authors": [
@@ -15,5 +17,5 @@
             "email": "mail@tunahancaliskan.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
